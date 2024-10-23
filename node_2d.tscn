@@ -1,0 +1,158 @@
+[gd_scene load_steps=21 format=3 uid="uid://bs6ab5amrsvat"]
+
+[ext_resource type="Texture2D" uid="uid://btijofq5foqm3" path="res://backgrounds/fundo.png" id="1_fllck"]
+[ext_resource type="Texture2D" uid="uid://3di3xkex22gs" path="res://assets/graficos/characters/personagens.png" id="2_uxgmu"]
+[ext_resource type="Texture2D" uid="uid://dj8yminxn7sek" path="res://assets/graficos/characters/zombie.png" id="3_51p84"]
+[ext_resource type="Texture2D" uid="uid://d2elf2tm2xvfv" path="res://assets/graficos/shotgun_munition-removebg-preview.png" id="4_ciuv0"]
+[ext_resource type="Texture2D" uid="uid://dl7yiktus52l7" path="res://assets/graficos/characters/zombie2.png" id="5_8t4jv"]
+[ext_resource type="Texture2D" uid="uid://bk83ngjkmokwm" path="res://assets/graficos/icons/gun fire.png" id="6_j4sr4"]
+[ext_resource type="Texture2D" uid="uid://dfh3nwxc1oa8" path="res://assets/graficos/icons/blood.png" id="7_slfrl"]
+[ext_resource type="Texture2D" uid="uid://ns44170washp" path="res://assets/graficos/icons/perigo.png" id="8_mybw6"]
+[ext_resource type="Texture2D" uid="uid://bafetbprmjlxv" path="res://assets/graficos/icons/hp bar.png" id="9_vr2rb"]
+[ext_resource type="Texture2D" uid="uid://chnhdupfwrqcf" path="res://assets/graficos/icons/alerta.png" id="10_tdbvg"]
+[ext_resource type="Texture2D" uid="uid://movjvwjimsob" path="res://assets/graficos/items/kit png.png" id="11_op1qy"]
+[ext_resource type="Texture2D" uid="uid://51kve58rbjat" path="res://assets/graficos/items/assaultrifle.png" id="12_qfk8b"]
+[ext_resource type="Texture2D" uid="uid://tebs80sna6b8" path="res://assets/graficos/items/combatknifepremium.png" id="13_l0md8"]
+[ext_resource type="Texture2D" uid="uid://bu8v4ytvul7fc" path="res://assets/graficos/items/k77l2b.png" id="14_h8b7y"]
+[ext_resource type="Texture2D" uid="uid://dbckyaldx35y8" path="res://assets/graficos/items/Knifepng.png" id="15_y8i0d"]
+[ext_resource type="Texture2D" uid="uid://5pkccuprwt8" path="res://assets/graficos/items/lanterna.png" id="16_ysbqf"]
+[ext_resource type="Texture2D" uid="uid://bo0ooh1jp2w2" path="res://assets/graficos/items/m4.png" id="17_doyek"]
+[ext_resource type="Texture2D" uid="uid://dp55oqy1tpxw4" path="res://assets/graficos/items/shotgun.png" id="18_s5kqc"]
+[ext_resource type="Texture2D" uid="uid://cnl6euq7ekkeb" path="res://assets/graficos/munição.png" id="19_10psq"]
+[ext_resource type="Texture2D" uid="uid://citdhswk4jsap" path="res://assets/graficos/soldier icon.png" id="20_tg57g"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="14622749380557_560858d24a85e" type="Sprite2D" parent="."]
+position = Vector2(609, 322)
+scale = Vector2(2.39797, 2.48426)
+texture = ExtResource("1_fllck")
+
+[node name="CharactersModel-removebg-preview" type="Sprite2D" parent="."]
+position = Vector2(-169, -382)
+scale = Vector2(0.751572, 0.751572)
+texture = ExtResource("2_uxgmu")
+
+[node name="Skeleton-attack0" type="Sprite2D" parent="."]
+position = Vector2(428, 40)
+rotation = -3.14721
+texture = ExtResource("3_51p84")
+
+[node name="Skeleton-attack0" type="Sprite2D" parent="Skeleton-attack0"]
+position = Vector2(292.697, -123.358)
+rotation = -4.77635
+texture = ExtResource("3_51p84")
+
+[node name="Skeleton-attack0" type="Sprite2D" parent="Skeleton-attack0/Skeleton-attack0"]
+position = Vector2(-271.585, 1077.73)
+rotation = -4.77635
+texture = ExtResource("3_51p84")
+
+[node name="ShotgunMunition-removebg-preview" type="Sprite2D" parent="Skeleton-attack0/Skeleton-attack0"]
+position = Vector2(-227.45, -346.652)
+scale = Vector2(0.224132, 0.224132)
+texture = ExtResource("4_ciuv0")
+
+[node name="Zombie2" type="Sprite2D" parent="."]
+position = Vector2(834, -402)
+texture = ExtResource("5_8t4jv")
+
+[node name="GunFire" type="Sprite2D" parent="."]
+position = Vector2(-312, -403)
+scale = Vector2(0.116667, 0.116667)
+texture = ExtResource("6_j4sr4")
+
+[node name="GunFire" type="Sprite2D" parent="GunFire"]
+position = Vector2(1225.71, -51.4287)
+scale = Vector2(0.986905, 0.986905)
+texture = ExtResource("6_j4sr4")
+
+[node name="GunFire" type="Sprite2D" parent="GunFire/GunFire"]
+position = Vector2(1311.46, 52.111)
+scale = Vector2(0.986905, 0.986905)
+texture = ExtResource("6_j4sr4")
+
+[node name="Blood" type="Sprite2D" parent="GunFire/GunFire"]
+position = Vector2(7955.61, -260.555)
+texture = ExtResource("7_slfrl")
+
+[node name="Blood" type="Sprite2D" parent="GunFire/GunFire/Blood"]
+position = Vector2(1189.87, 1181.18)
+texture = ExtResource("7_slfrl")
+
+[node name="Blood2" type="Sprite2D" parent="GunFire/GunFire/Blood"]
+position = Vector2(-43.4253, 746.924)
+texture = ExtResource("7_slfrl")
+
+[node name="Blood" type="Sprite2D" parent="GunFire/GunFire/Blood/Blood2"]
+position = Vector2(1241.98, -1050.9)
+texture = ExtResource("7_slfrl")
+
+[node name="Perigo" type="Sprite2D" parent="."]
+position = Vector2(138, -134)
+scale = Vector2(0.0657976, 0.0657976)
+texture = ExtResource("8_mybw6")
+
+[node name="HpBar" type="Sprite2D" parent="."]
+position = Vector2(-88, 1192)
+scale = Vector2(0.574107, 0.574107)
+texture = ExtResource("9_vr2rb")
+
+[node name="Alerta" type="Sprite2D" parent="."]
+position = Vector2(442, -77)
+scale = Vector2(0.132558, 0.132558)
+texture = ExtResource("10_tdbvg")
+
+[node name="Alerta" type="Sprite2D" parent="Alerta"]
+position = Vector2(-1418.25, 1772.81)
+scale = Vector2(1.08382, 1.08382)
+texture = ExtResource("10_tdbvg")
+
+[node name="KitPng" type="Sprite2D" parent="."]
+position = Vector2(1531, 363)
+scale = Vector2(1.66406, 1.66406)
+texture = ExtResource("11_op1qy")
+
+[node name="Assaultrifle" type="Sprite2D" parent="."]
+position = Vector2(1334, 14)
+scale = Vector2(0.412109, 0.412109)
+texture = ExtResource("12_qfk8b")
+
+[node name="Combatknifepremium" type="Sprite2D" parent="."]
+position = Vector2(778, 797)
+scale = Vector2(0.286133, 0.286133)
+texture = ExtResource("13_l0md8")
+
+[node name="K77l2b" type="Sprite2D" parent="."]
+position = Vector2(-294, 34)
+scale = Vector2(0.604, 0.604)
+texture = ExtResource("14_h8b7y")
+
+[node name="Knifepng" type="Sprite2D" parent="."]
+position = Vector2(1361, -345)
+scale = Vector2(0.4375, 0.4375)
+texture = ExtResource("15_y8i0d")
+
+[node name="Lanterna" type="Sprite2D" parent="."]
+position = Vector2(121, -311)
+scale = Vector2(0.0796875, 0.0796875)
+texture = ExtResource("16_ysbqf")
+
+[node name="M4" type="Sprite2D" parent="."]
+position = Vector2(1055, 338)
+texture = ExtResource("17_doyek")
+
+[node name="Shotgun" type="Sprite2D" parent="."]
+position = Vector2(-266, 399)
+scale = Vector2(0.617188, 0.617188)
+texture = ExtResource("18_s5kqc")
+
+[node name="Munição" type="Sprite2D" parent="."]
+position = Vector2(-181.332, 1384.47)
+scale = Vector2(2.16062, 2.16062)
+texture = ExtResource("19_10psq")
+
+[node name="SoldierIcon" type="Sprite2D" parent="."]
+position = Vector2(-423, 1181)
+scale = Vector2(0.358398, 0.358398)
+texture = ExtResource("20_tg57g")
